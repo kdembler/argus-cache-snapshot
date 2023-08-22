@@ -15,5 +15,5 @@ You can also use it with Docker for easily managed and persistent service.
 
 ```sh
 docker build -t argus-cache-snapshot .
-docker run -d -v /root/js-data/distributor/cache:/app/cache -v /root/js-data/distributor/data:/app/data -v /root/dist-snapshots:/app/output -e CACHE_FILE_PATH=/app/cache/cache.json -e DATA_DIRECTORY_PATH=/app/data -e OUTPUT_DIRECTORY_PATH=/app/output argus-cache-snapshot
+docker run -d -v /root/js-data/distributor/cache:/app/cache -v /root/js-data/distributor/data:/app/data -v /root/dist-snapshots:/app/output -e CACHE_FILE_PATH=/app/cache/cache.json -e DATA_DIRECTORY_PATH=/app/data -e OUTPUT_DIRECTORY_PATH=/app/output --name argus-cache-snapshot argus-cache-snapshot
 ```
