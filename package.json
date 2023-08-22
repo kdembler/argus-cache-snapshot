@@ -1,0 +1,14 @@
+{
+  "name": "argus-cache-snapshot",
+  "version": "1.0.0",
+  "main": "snapshot.js",
+  "scripts": {
+    "start": "node snapshot.js"
+  },
+  "author": "Klaudiusz Dembler",
+  "license": "ISC",
+  "dependencies": {
+    "node-cron": "^3.0.2",
+    "dotenv": "^16.3.1"
+  }
+}
